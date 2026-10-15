@@ -3,40 +3,53 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b0d10">
-<meta name="description" content="Shivam Meena — Performance Marketing Specialist with hands-on experience in Meta Ads, Google Ads, lead generation, eCommerce, app promotion and conversion tracking.">
-<title>Shivam Meena | Performance Marketing Portfolio</title>
+<meta name="description" content="Shivam Meena — Performance Marketing Specialist experienced in Meta Ads, Google Ads, lead generation, eCommerce, app promotion and conversion tracking.">
+<title>Shivam Meena | Performance Marketing Specialist</title>
+
 <style>
-:root{--bg:#0b0d10;--panel:#13171c;--text:#f4f7f5;--muted:#a2ada7;--green:#b8ff65;--border:#2b332e}
+:root {
+  --bg:#0b0d10;
+  --panel:#13171c;
+  --text:#f4f7f5;
+  --muted:#a2ada7;
+  --green:#b8ff65;
+  --border:#2b332e;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
+html{scroll-behavior:smooth;scroll-padding-top:85px}
 body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.7}
 a{color:inherit;text-decoration:none}
 .container{width:min(1120px,90%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#0b0d10f5;border-bottom:1px solid var(--border)}
-nav{min-height:72px;display:flex;justify-content:space-between;align-items:center;gap:18px}
-.logo{font-size:21px;font-weight:800}.logo span,.green{color:var(--green)}
-.navlinks{display:flex;align-items:center;gap:22px;color:var(--muted);font-size:14px}
+header{position:sticky;top:0;z-index:10;background:#0b0d10f5;border-bottom:1px solid var(--border);backdrop-filter:blur(12px)}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-size:21px;font-weight:800;white-space:nowrap}
+.green,.logo span{color:var(--green)}
+.navlinks{display:flex;align-items:center;gap:19px;font-size:13px;color:var(--muted)}
 .navlinks a:hover{color:var(--green)}
-.btn{display:inline-block;background:var(--green);color:#11170c;padding:11px 17px;border-radius:8px;font-weight:700;font-size:14px;border:1px solid var(--green)}
+.btn{display:inline-block;background:var(--green);color:#11170c;padding:11px 17px;border-radius:8px;font-weight:800;font-size:14px;border:1px solid var(--green)}
 .btn-outline{background:transparent;color:var(--green)}
-.hero{padding:95px 0 75px}
+.hero{padding:95px 0 70px}
 .eyebrow{display:inline-block;color:var(--green);background:#182014;border:1px solid #37462d;padding:5px 11px;border-radius:30px;font-size:12px;text-transform:uppercase;letter-spacing:1px}
-h1{font-size:clamp(40px,7vw,74px);line-height:1.08;letter-spacing:-2px;margin:24px 0;max-width:900px}
-h2{font-size:clamp(29px,4vw,42px);line-height:1.2;letter-spacing:-1px;margin:14px 0}
-h3{font-size:20px;margin-bottom:10px}
+h1{font-size:clamp(40px,7vw,74px);line-height:1.09;letter-spacing:-2px;margin:24px 0;max-width:900px}
+h2{font-size:clamp(29px,4vw,42px);line-height:1.2;letter-spacing:-1px;margin:15px 0}
+h3{font-size:20px;line-height:1.4;margin-bottom:10px}
 p{color:var(--muted)}
 .intro{max-width:760px;font-size:17px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
-.note{font-size:12px;margin-top:15px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.note{font-size:12px;margin-top:16px}
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:45px}
 .stat,.card,.case,.proof,.contact{background:var(--panel);border:1px solid var(--border);border-radius:13px}
-.stat{padding:20px}.stat strong{display:block;font-size:27px;color:var(--green)}.stat span{font-size:13px;color:var(--muted)}
+.stat{padding:20px}
+.stat strong{display:block;font-size:27px;color:var(--green)}
+.stat span{font-size:13px;color:var(--muted)}
 section{padding:72px 0}
-.sectionhead{margin-bottom:30px}.sectionhead p{max-width:730px}
+.sectionhead{margin-bottom:30px}
+.sectionhead p{max-width:760px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.card{padding:24px}.card p,.case p,.proof p{font-size:14px}
+.card{padding:23px}
+.card p,.case p,.proof p{font-size:14px}
 .card ul,.case ul{padding-left:18px;color:var(--muted);font-size:14px;margin-top:12px}
 .card li,.case li{margin:5px 0}
 .icon{display:grid;place-items:center;width:42px;height:42px;border-radius:10px;background:#20291a;color:var(--green);font-weight:800;margin-bottom:16px}
@@ -47,189 +60,249 @@ section{padding:72px 0}
 .metric small{display:block;color:var(--muted);font-size:12px;font-weight:400}
 .tools{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
 .tools span{border:1px solid var(--border);background:var(--panel);padding:8px 12px;border-radius:7px;font-size:13px}
-.proofs{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
-.proof{overflow:hidden}
-.proof img{display:block;width:100%;height:270px;object-fit:contain;background:#0a0c0e}
-.proofbody{padding:18px}
+.proofs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.proof{overflow:hidden;min-width:0}
+.proof img{display:block;width:100%;height:320px;object-fit:contain;background:#080a0c}
+.proofbody{padding:19px}
 .proofbody p{font-size:13px}
-.proofbody a{display:inline-block;color:var(--green);font-size:13px;margin-top:8px}
-.proof-placeholder{height:230px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:20px;background:#171d17;color:var(--green)}
-.proof-placeholder span{font-size:40px}
-.proof-placeholder p{font-size:13px;margin-top:8px}
+.proof-label{display:inline-block;color:var(--green);font-size:11px;border:1px solid #37462d;padding:3px 9px;border-radius:20px;margin-bottom:10px}
 .process{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
 .step{border-top:2px solid var(--green);padding-top:15px}
-.step b{color:var(--green);font-size:12px}.step p{font-size:14px}
+.step b{color:var(--green);font-size:12px}
+.step p{font-size:14px}
 .contact{padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}
-.contact p{margin-top:10px}.contact-actions{display:flex;flex-wrap:wrap;gap:10px}
+.contact p{margin-top:10px}
+.contact-actions{display:flex;flex-wrap:wrap;gap:10px}
 footer{border-top:1px solid var(--border);padding:23px 0;color:var(--muted);font-size:13px}
 footer .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
-@media(max-width:800px){.navlinks{gap:12px}.navlinks a:not(.btn){display:none}.stats{grid-template-columns:repeat(2,1fr)}.grid3{grid-template-columns:repeat(2,1fr)}.process{grid-template-columns:repeat(2,1fr)}.contact{align-items:flex-start;flex-direction:column}}
-@media(max-width:560px){.hero{padding:65px 0 55px}section{padding:55px 0}.grid3,.cases,.proofs{grid-template-columns:1fr}.stat{padding:14px}.stat strong{font-size:23px}.proof img{height:230px}h1{letter-spacing:-1px}.contact{padding:23px}}
+@media(max-width:900px){
+ .navlinks{gap:12px}
+ .navlinks a:not(.btn){display:none}
+ .stats{grid-template-columns:repeat(2,1fr)}
+ .grid3{grid-template-columns:repeat(2,1fr)}
+ .process{grid-template-columns:repeat(2,1fr)}
+ .contact{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:560px){
+ .hero{padding:65px 0 55px}
+ section{padding:55px 0}
+ .grid3,.cases,.proofs{grid-template-columns:1fr}
+ .stat{padding:14px}
+ .stat strong{font-size:23px}
+ .proof img{height:250px}
+ h1{letter-spacing:-1px}
+ .contact{padding:23px}
+ .logo{font-size:18px}
+}
 </style>
 </head>
+
 <body>
 <header>
-<nav class="container">
-<a class="logo" href="#home">Shivam <span>Meena.</span></a>
-<div class="navlinks">
-<a href="#about">About</a>
-<a href="#meta">Meta Ads</a>
-<a href="#google">Google Ads</a>
-<a href="#proof">Proof</a>
-<a class="btn" href="#contact">Contact Me</a>
-</div>
-</nav>
+  <nav class="container">
+    <a class="logo" href="#home">Shivam <span>Meena.</span></a>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#meta">Meta Ads</a>
+      <a href="#google">Google Ads</a>
+      <a href="#proof">Proof</a>
+      <a class="btn" href="#contact">Contact</a>
+    </div>
+  </nav>
 </header>
 
 <main>
 <section class="hero container" id="home">
-<span class="eyebrow">Performance Marketing Specialist</span>
-<h1>Scaling campaigns through <span class="green">data-driven advertising.</span></h1>
-<p class="intro">I'm Shivam Meena. I help businesses generate qualified leads, increase eCommerce sales and acquire customers through Meta Ads, Google Ads, conversion tracking and ongoing campaign optimisation.</p>
-<div class="actions">
-<a class="btn" href="#contact">Discuss a Project ↗</a>
-<a class="btn btn-outline" href="#proof">View Campaign Proof</a>
-</div>
-<p class="note">Hands-on experience across India, Australia, the USA and Canada.</p>
-<div class="stats">
-<div class="stat"><strong>₹1 Cr+</strong><span>Monthly ad budget handled</span></div>
-<div class="stat"><strong>5,000+</strong><span>Reported monthly leads</span></div>
-<div class="stat"><strong>4.5x+</strong><span>Reported eCommerce ROAS</span></div>
-<div class="stat"><strong>1.5+ Years</strong><span>Hands-on paid media experience</span></div>
-</div>
+  <span class="eyebrow">Performance Marketing Specialist</span>
+  <h1>Turning advertising into <span class="green">measurable growth.</span></h1>
+  <p class="intro">I'm Shivam Meena, a Performance Marketing Specialist with hands-on experience managing Meta Ads and Google Ads campaigns. I work on lead generation, eCommerce sales, traffic acquisition, app promotion, audience strategy, conversion tracking and campaign optimisation.</p>
+  <div class="actions">
+    <a class="btn" href="#contact">Let's Work Together ↗</a>
+    <a class="btn btn-outline" href="#proof">View Campaign Proof</a>
+  </div>
+  <p class="note">Campaign experience across India, Australia, the USA and Canada.</p>
+
+  <div class="stats">
+    <div class="stat"><strong>₹1 Cr+</strong><span>Reported monthly ad budget handled</span></div>
+    <div class="stat"><strong>5,000+</strong><span>Reported monthly leads</span></div>
+    <div class="stat"><strong>6.39x</strong><span>Reported jewellery campaign ROAS</span></div>
+    <div class="stat"><strong>1.5+ Years</strong><span>Hands-on paid media experience</span></div>
+  </div>
 </section>
 
 <section id="about">
 <div class="container">
-<div class="sectionhead">
-<span class="eyebrow">About Me</span>
-<h2>Performance marketing focused on <span class="green">business outcomes.</span></h2>
-<p>My work covers campaign strategy, account setup, audience and creative testing, budget management, conversion tracking and performance analysis. I focus on the metrics that matter to each business: qualified leads, purchases, CPL, CPA, conversion rate and ROAS.</p>
-</div>
-<div class="grid3">
-<article class="card"><div class="icon">01</div><h3>Campaign Strategy</h3><p>Campaign structure, objectives, audience selection, keyword strategy and budget allocation aligned with business goals.</p></article>
-<article class="card"><div class="icon">02</div><h3>Optimisation</h3><p>Continuous analysis of results, creative testing, audience quality, search terms and campaign efficiency.</p></article>
-<article class="card"><div class="icon">03</div><h3>Measurement</h3><p>Tracking and reporting with GA4, GTM, Meta Pixel, Conversions API and campaign UTMs.</p></article>
-</div>
+  <div class="sectionhead">
+    <span class="eyebrow">About Me</span>
+    <h2>Strategy, execution and <span class="green">performance.</span></h2>
+    <p>My approach combines campaign strategy, audience research, creative testing, accurate conversion tracking and performance analysis. I focus on business outcomes such as qualified leads, purchases, cost per acquisition and return on ad spend.</p>
+  </div>
+  <div class="grid3">
+    <article class="card"><div class="icon">01</div><h3>Campaign Management</h3><p>Planning, setup, monitoring and optimisation of campaigns according to business goals and budget.</p></article>
+    <article class="card"><div class="icon">02</div><h3>Performance Analysis</h3><p>Evaluating CTR, CPC, CPM, CPL, CPA, conversions and ROAS to identify opportunities for improvement.</p></article>
+    <article class="card"><div class="icon">03</div><h3>Tracking & Reporting</h3><p>Conversion measurement and reporting using GA4, Google Tag Manager, Meta Pixel, Conversions API and UTMs.</p></article>
+  </div>
 </div>
 </section>
 
 <section id="meta">
 <div class="container">
-<div class="sectionhead">
-<span class="eyebrow">Platform Expertise</span>
-<h2>Meta Ads: Facebook & Instagram</h2>
-<p>Campaign experience across lead generation, online sales, retargeting and customer acquisition.</p>
-</div>
-<div class="grid3">
-<article class="card"><div class="icon">01</div><h3>Lead Generation</h3><p>Instant forms and lead-focused campaigns for service businesses and financial services.</p><ul><li>Instant forms and lead qualification</li><li>Audience and location targeting</li><li>Cost per lead monitoring</li><li>Lead quality and sales feedback</li></ul></article>
-<article class="card"><div class="icon">02</div><h3>eCommerce & Sales</h3><p>Purchase-focused campaigns for product businesses and online stores.</p><ul><li>Sales and conversion campaigns</li><li>Product creatives and catalogues</li><li>ROAS and purchase tracking</li><li>Retargeting and funnel analysis</li></ul></article>
-<article class="card"><div class="icon">03</div><h3>App Promotion</h3><p>Campaign planning and optimisation focused on app installs and measurable downstream actions.</p><ul><li>App promotion objectives</li><li>Creative and audience testing</li><li>Install and event measurement</li><li>Cost and quality analysis</li></ul></article>
-<article class="card"><div class="icon">04</div><h3>Remarketing</h3><p>Reconnect with relevant audiences who have already interacted with a brand.</p><ul><li>Website and engagement audiences</li><li>Retargeting strategy</li><li>Pixel-based audience setup</li><li>Funnel-based messaging</li></ul></article>
-<article class="card"><div class="icon">05</div><h3>Creative Testing</h3><p>Structured evaluation of ad formats, offers and messaging.</p><ul><li>Reels, videos and static creatives</li><li>Hooks, copy and offer testing</li><li>CTR and conversion analysis</li><li>Creative refresh recommendations</li></ul></article>
-<article class="card"><div class="icon">06</div><h3>Scaling & Optimisation</h3><p>Monitor performance and identify opportunities to improve efficiency as campaigns grow.</p><ul><li>Budget pacing and allocation</li><li>CPA, CPL and ROAS analysis</li><li>Audience and placement analysis</li><li>Weekly performance reporting</li></ul></article>
-</div>
+  <div class="sectionhead">
+    <span class="eyebrow">Platform Expertise</span>
+    <h2>Meta Ads: <span class="green">Facebook & Instagram</span></h2>
+    <p>Experience and capabilities across the Meta advertising funnel, from awareness and traffic acquisition to leads, purchases and remarketing.</p>
+  </div>
+  <div class="grid3">
+    <article class="card"><div class="icon">01</div><h3>Traffic Campaigns</h3><p>Drive relevant visitors to websites, landing pages and other destinations.</p><ul><li>Landing page views and link clicks</li><li>Website traffic acquisition</li><li>Audience and placement testing</li><li>CTR, CPC and landing-page analysis</li></ul></article>
+    <article class="card"><div class="icon">02</div><h3>Lead Generation</h3><p>Generate enquiries for service businesses and financial services.</p><ul><li>Instant forms and website forms</li><li>Lead qualification questions</li><li>Local and regional targeting</li><li>CPL and lead-quality analysis</li></ul></article>
+    <article class="card"><div class="icon">03</div><h3>Sales & eCommerce</h3><p>Purchase-focused campaigns for products and online stores.</p><ul><li>Sales and conversion campaigns</li><li>Product creatives and catalogues</li><li>Purchase tracking</li><li>CPA and ROAS optimisation</li></ul></article>
+    <article class="card"><div class="icon">04</div><h3>Engagement Campaigns</h3><p>Encourage meaningful interactions with content and social profiles.</p><ul><li>Post engagement</li><li>Reactions, comments and shares</li><li>Instagram and Facebook engagement</li><li>Engagement audience creation</li></ul></article>
+    <article class="card"><div class="icon">05</div><h3>Awareness & Reach</h3><p>Increase brand visibility among relevant audiences.</p><ul><li>Reach and awareness objectives</li><li>Frequency and CPM monitoring</li><li>Geographic audience targeting</li><li>Brand visibility campaigns</li></ul></article>
+    <article class="card"><div class="icon">06</div><h3>Video Views & Reels</h3><p>Use video-led advertising to introduce products, services and offers.</p><ul><li>Reels, Stories and video ads</li><li>Creative hook testing</li><li>Video-view analysis</li><li>Video viewer remarketing</li></ul></article>
+    <article class="card"><div class="icon">07</div><h3>App Promotion</h3><p>Campaign planning for mobile app installs and in-app actions.</p><ul><li>App install objectives</li><li>In-app event measurement</li><li>Creative and audience testing</li><li>Cost per install analysis</li></ul></article>
+    <article class="card"><div class="icon">08</div><h3>Messaging Campaigns</h3><p>Encourage customers to start conversations with a business.</p><ul><li>WhatsApp, Messenger and Instagram Direct</li><li>Click-to-message ads</li><li>Conversation-focused creative</li><li>Cost per conversation analysis</li></ul></article>
+    <article class="card"><div class="icon">09</div><h3>Retargeting</h3><p>Reconnect with users who have previously interacted with a business.</p><ul><li>Website visitor audiences</li><li>Customer and engagement audiences</li><li>Video viewers and page engagers</li><li>Funnel-based remarketing</li></ul></article>
+    <article class="card"><div class="icon">10</div><h3>Audience Segmentation</h3><p>Structure audiences to reach relevant potential customers.</p><ul><li>Broad and interest-based audiences</li><li>Custom Audiences</li><li>Lookalike Audiences, where available</li><li>Geographic and demographic targeting</li><li>Audience exclusions</li></ul></article>
+    <article class="card"><div class="icon">11</div><h3>Creative Testing</h3><p>Test messages and formats to find stronger campaign opportunities.</p><ul><li>Images, carousels and videos</li><li>Reels, Stories and Feed placements</li><li>Hooks, copy and offers</li><li>Creative performance analysis</li></ul></article>
+    <article class="card"><div class="icon">12</div><h3>Budget & Campaign Optimisation</h3><p>Monitor delivery and make data-informed optimisation decisions.</p><ul><li>ABO and CBO campaign structures</li><li>Budget pacing and scaling</li><li>Advantage+ features, where suitable</li><li>CPM, CTR, CPC, CPL, CPA and ROAS</li></ul></article>
+  </div>
 </div>
 </section>
 
 <section id="google">
 <div class="container">
-<div class="sectionhead">
-<span class="eyebrow">Google Ads Expertise</span>
-<h2>Reach customers across <span class="green">Google's ad networks.</span></h2>
-<p>Search, Display, Performance Max, Demand Gen and app promotion, with a focus on campaign goals, measurement and optimisation.</p>
-</div>
-<div class="grid3">
-<article class="card"><div class="icon">S</div><h3>Search Campaigns</h3><p>Capture high-intent demand from people actively searching for products or services.</p><ul><li>Keyword research and match types</li><li>Search terms and negative keywords</li><li>Ad copy and extensions/assets</li><li>Conversion and CPA optimisation</li></ul></article>
-<article class="card"><div class="icon">D</div><h3>Display Campaigns</h3><p>Reach relevant audiences across websites and apps in the Google Display Network.</p><ul><li>Audience and contextual targeting</li><li>Responsive display ads</li><li>Remarketing strategies</li><li>Reach and conversion analysis</li></ul></article>
-<article class="card"><div class="icon">P</div><h3>Performance Max</h3><p>Support goal-based campaigns across Google's eligible inventory using conversion signals and creative assets.</p><ul><li>Conversion goals and tracking</li><li>Asset group organisation</li><li>Audience signals and search themes</li><li>Performance and asset analysis</li></ul></article>
-<article class="card"><div class="icon">DG</div><h3>Demand Gen</h3><p>Visual, discovery-focused campaign planning to reach and engage potential customers.</p><ul><li>Image and video assets</li><li>Audience and creative testing</li><li>Engagement and conversion goals</li><li>Remarketing opportunities</li></ul></article>
-<article class="card"><div class="icon">A</div><h3>App Promotion</h3><p>Promote apps to encourage installs and valuable in-app actions.</p><ul><li>Install or in-app action objectives</li><li>Creative asset planning</li><li>Conversion event measurement</li><li>Cost per install and action analysis</li></ul></article>
-<article class="card"><div class="icon">T</div><h3>Tracking & Optimisation</h3><p>Improve measurement quality and make better optimisation decisions.</p><ul><li>Google Ads conversion tracking</li><li>GA4 and Google Tag Manager</li><li>UTM and attribution checks</li><li>Budget and search-term reviews</li></ul></article>
-</div>
+  <div class="sectionhead">
+    <span class="eyebrow">Google Ads Expertise</span>
+    <h2>Google Ads: <span class="green">Search to Scale</span></h2>
+    <p>Campaign types and optimisation methods covering high-intent search, display advertising, automated cross-channel campaigns, demand generation and app promotion.</p>
+  </div>
+  <div class="grid3">
+    <article class="card"><div class="icon">S</div><h3>Search Campaigns</h3><p>Reach people actively searching for products and services.</p><ul><li>Keyword research and match types</li><li>Search terms and negative keywords</li><li>Ad copy and assets</li><li>Conversions and CPA analysis</li></ul></article>
+    <article class="card"><div class="icon">D</div><h3>Display Campaigns</h3><p>Reach relevant audiences across eligible websites and apps.</p><ul><li>Audience and contextual targeting</li><li>Responsive display ads</li><li>Remarketing</li><li>Reach and conversion analysis</li></ul></article>
+    <article class="card"><div class="icon">P</div><h3>Performance Max</h3><p>Goal-based campaigns across Google's eligible advertising inventory.</p><ul><li>Conversion goals and tracking</li><li>Asset groups and creative assets</li><li>Audience signals and search themes</li><li>Performance and asset analysis</li></ul></article>
+    <article class="card"><div class="icon">DG</div><h3>Demand Gen</h3><p>Visual campaigns designed to build demand and engage prospective customers.</p><ul><li>Image and video assets</li><li>Audience and creative testing</li><li>Engagement and conversion goals</li><li>Remarketing opportunities</li></ul></article>
+    <article class="card"><div class="icon">A</div><h3>App Promotion</h3><p>Promote mobile apps to encourage installs and valuable in-app actions.</p><ul><li>Install and in-app action objectives</li><li>Creative asset planning</li><li>Conversion event measurement</li><li>Cost per install and action analysis</li></ul></article>
+    <article class="card"><div class="icon">R</div><h3>Remarketing</h3><p>Reconnect with eligible audiences who previously visited or engaged.</p><ul><li>Website and customer audiences</li><li>GA4 audience integrations</li><li>Display remarketing</li><li>Audience exclusions and analysis</li></ul></article>
+    <article class="card"><div class="icon">K</div><h3>Keyword Strategy</h3><p>Build search campaigns around user intent and relevant queries.</p><ul><li>Keyword research and grouping</li><li>Search query analysis</li><li>Negative keyword management</li><li>Search intent and ad relevance</li></ul></article>
+    <article class="card"><div class="icon">T</div><h3>Tracking & Analytics</h3><p>Measure campaign outcomes to inform optimisation decisions.</p><ul><li>Google Ads conversion tracking</li><li>GA4 and Google Tag Manager</li><li>UTM tracking</li><li>Conversion quality checks</li></ul></article>
+    <article class="card"><div class="icon">B</div><h3>Budget & Performance</h3><p>Monitor campaign efficiency and identify opportunities for improvement.</p><ul><li>Budget allocation and pacing</li><li>Clicks, CPC and CTR</li><li>Conversions and CPA</li><li>Search, display and campaign reports</li></ul></article>
+  </div>
 </div>
 </section>
 
 <section id="experience">
 <div class="container">
-<div class="sectionhead">
-<span class="eyebrow">Selected Campaign Experience</span>
-<h2>Different businesses. <span class="green">Different objectives.</span></h2>
-<p>Examples of campaign work across industries and markets. The figures below are reported experience and should be read alongside the relevant reporting period and attribution settings.</p>
-</div>
-<div class="cases">
-<article class="case"><span class="tag">eCommerce · Jewellery</span><h3>Purchase and ROAS optimisation</h3><p>Managed product-focused Meta Ads campaigns with creative testing, sales monitoring and purchase optimisation.</p><ul><li>Product creatives and influencer reels</li><li>Purchase tracking and performance reviews</li><li>Campaigns serving India and international audiences</li></ul><div class="metric">6.39x reported ROAS<small>From a shared Ads Manager report; verify dates and attribution before publishing evidence.</small></div></article>
-<article class="case"><span class="tag">Financial Services · Lead Generation</span><h3>High-volume acquisition</h3><p>Managed Meta and Google campaigns supporting lead generation and app installs.</p><ul><li>Campaign budgets up to ₹1 crore per month</li><li>Reported 5,000+ monthly leads</li><li>Reported CPL around ₹300–₹350</li></ul><div class="metric">5,000+ reported leads/month<small>Campaign volume and CPL are historical reported figures, not guarantees.</small></div></article>
-<article class="case"><span class="tag">Home Improvement · Australia</span><h3>Local service lead generation</h3><p>Supported advertising for curtains, blinds, shutters, painting and other home improvement services.</p><ul><li>Meta instant lead forms</li><li>Offer and creative messaging</li><li>Local audience and lead-quality analysis</li></ul><div class="metric">25% reported lead-to-sale rate<small>Client-reported outcome; depends on follow-up and sales process.</small></div></article>
-<article class="case"><span class="tag">B2B · USA & Canada</span><h3>Digital assets and professional services</h3><p>Campaign planning and advertising support for 3D assets, cabinetry professionals and kitchen design services.</p><ul><li>Membership and subscription offers</li><li>B2B audience and landing-page strategy</li><li>Conversion tracking and remarketing planning</li></ul><div class="metric">Measurement-led approach<small>Focus on qualified traffic, clear conversion events and sustainable acquisition.</small></div></article>
-</div>
+  <div class="sectionhead">
+    <span class="eyebrow">Campaign Experience</span>
+    <h2>Experience across <span class="green">industries and markets.</span></h2>
+    <p>Selected examples of my paid advertising work. Figures are historical reported results, not guarantees of future performance.</p>
+  </div>
+  <div class="cases">
+    <article class="case"><span class="tag">eCommerce · Jewellery</span><h3>Purchase & ROAS optimisation</h3><p>Managed product-focused Meta campaigns using creative testing, purchase tracking and performance monitoring.</p><ul><li>Product creatives and influencer reels</li><li>Sales and purchase analysis</li><li>Campaigns targeting India and international audiences</li></ul><div class="metric">6.39x reported ROAS<small>Historical Ads Manager metric; see proof image and confirm the reporting dates.</small></div></article>
+    <article class="case"><span class="tag">Financial Services · Lead Generation</span><h3>High-volume acquisition</h3><p>Managed Meta and Google campaigns supporting lead generation and app installs.</p><ul><li>Campaign budgets reported up to ₹1 crore per month</li><li>5,000+ reported monthly leads</li><li>Reported CPL around ₹300–₹350</li></ul><div class="metric">5,000+ reported leads/month<small>Historical reported campaign results.</small></div></article>
+    <article class="case"><span class="tag">Home Improvement · Australia</span><h3>Local service lead generation</h3><p>Supported advertising for curtains, blinds, shutters, painting and related home improvement services.</p><ul><li>Meta instant lead forms</li><li>Offer and creative messaging</li><li>Local targeting and lead-quality considerations</li></ul><div class="metric">25% reported lead-to-sale rate<small>Client-reported figure; actual outcomes depend on follow-up and sales process.</small></div></article>
+    <article class="case"><span class="tag">B2B · USA & Canada</span><h3>Digital assets & professional services</h3><p>Campaign planning and advertising support for 3D assets, cabinetry professionals and kitchen design services.</p><ul><li>Membership and subscription offers</li><li>B2B audience and offer positioning</li><li>Landing-page and conversion tracking planning</li></ul><div class="metric">Measurement-led approach<small>Focus on qualified traffic and measurable conversions.</small></div></article>
+  </div>
 </div>
 </section>
 
 <section id="proof">
 <div class="container">
-<div class="sectionhead">
-<span class="eyebrow">Campaign Evidence</span>
-<h2>Proof of performance.</h2>
-<p>This section is ready for real screenshots from Ads Manager and Google Ads. Upload your redacted screenshots to this repository, then replace the placeholder cards below with your image filenames.</p>
-</div>
-<div class="proofs">
-<article class="proof">
-<div class="proof-placeholder"><span>＋</span><strong>Meta Ads — ROAS & Purchases</strong><p>Replace with your Meta Ads Manager screenshot</p></div>
-<div class="proofbody"><h3>eCommerce Performance</h3><p>Show purchase volume, purchase ROAS, spend and the reporting dates.</p></div>
-</article>
-<article class="proof">
-<div class="proof-placeholder"><span>＋</span><strong>Meta Ads — Lead Generation</strong><p>Replace with your lead campaign screenshot</p></div>
-<div class="proofbody"><h3>Lead Generation Results</h3><p>Show spend, leads, CPL and reporting dates.</p></div>
-</article>
-<article class="proof">
-<div class="proof-placeholder"><span>＋</span><strong>Google Ads — Search / PMax</strong><p>Replace with your Google Ads screenshot</p></div>
-<div class="proofbody"><h3>Google Ads Performance</h3><p>Show conversions, cost per conversion, spend and campaign type.</p></div>
-</article>
-<article class="proof">
-<div class="proof-placeholder"><span>＋</span><strong>Google Ads — Other Campaigns</strong><p>Replace with your Display, Demand Gen or App screenshot</p></div>
-<div class="proofbody"><h3>Campaign Reporting</h3><p>Show relevant impressions, clicks, installs or conversions.</p></div>
-</article>
-</div>
-<p class="note">Only publish evidence you have permission to share. Hide client names, account IDs, customer data, email addresses and other confidential details.</p>
+  <div class="sectionhead">
+    <span class="eyebrow">Real Campaign Screenshots</span>
+    <h2>Proof of <span class="green">performance.</span></h2>
+    <p>A selection of uploaded campaign screenshots. Click an image to open it in full size.</p>
+  </div>
+
+  <div class="proofs">
+    <article class="proof">
+      <a href="6%2B%20roas.png" target="_blank" rel="noopener noreferrer">
+        <img src="6%2B%20roas.png" alt="Meta Ads campaign ROAS and purchase results" loading="lazy">
+      </a>
+      <div class="proofbody"><span class="proof-label">Meta Ads · eCommerce</span><h3>Purchase & ROAS Results</h3><p>Uploaded campaign screenshot showing reported return on ad spend.</p></div>
+    </article>
+
+    <article class="proof">
+      <a href="Leads.png" target="_blank" rel="noopener noreferrer">
+        <img src="Leads.png" alt="Lead generation campaign performance screenshot" loading="lazy">
+      </a>
+      <div class="proofbody"><span class="proof-label">Lead Generation</span><h3>Lead Campaign Results</h3><p>Uploaded screenshot for reviewing lead generation performance.</p></div>
+    </article>
+
+    <article class="proof">
+      <a href="app%201.png" target="_blank" rel="noopener noreferrer">
+        <img src="app%201.png" alt="App advertising campaign proof screenshot one" loading="lazy">
+      </a>
+      <div class="proofbody"><span class="proof-label">App Campaigns</span><h3>App Campaign Evidence</h3><p>Uploaded app advertising report. Review the screenshot for the exact campaign metrics.</p></div>
+    </article>
+
+    <article class="proof">
+      <a href="app.png" target="_blank" rel="noopener noreferrer">
+        <img src="app.png" alt="App advertising campaign proof screenshot two" loading="lazy">
+      </a>
+      <div class="proofbody"><span class="proof-label">App Campaigns</span><h3>Additional App Results</h3><p>Additional uploaded campaign evidence.</p></div>
+    </article>
+
+    <article class="proof">
+      <a href="meta%20app.png" target="_blank" rel="noopener noreferrer">
+        <img src="meta%20app.png" alt="Meta app advertising campaign screenshot" loading="lazy">
+      </a>
+      <div class="proofbody"><span class="proof-label">Meta Ads · App Promotion</span><h3>Meta App Campaign</h3><p>Uploaded screenshot for app promotion campaign performance.</p></div>
+    </article>
+  </div>
+
+  <p class="note">Screenshots are displayed directly from this repository. Only share evidence you have permission to publish. Hide account IDs, private customer information and confidential client data.</p>
 </div>
 </section>
 
 <section id="tools">
 <div class="container">
-<div class="sectionhead"><span class="eyebrow">Platforms & Tools</span><h2>My marketing toolkit.</h2></div>
-<div class="tools">
-<span>Meta Ads Manager</span><span>Google Ads Search</span><span>Display</span><span>Performance Max</span><span>Demand Gen</span><span>App Promotion</span><span>GA4</span><span>Google Tag Manager</span><span>Meta Pixel</span><span>Conversions API</span><span>UTM Tracking</span><span>Remarketing</span><span>Creative Testing</span><span>Landing-Page Optimisation</span>
-</div>
+  <div class="sectionhead"><span class="eyebrow">Platforms & Tools</span><h2>My marketing toolkit.</h2></div>
+  <div class="tools">
+    <span>Meta Ads Manager</span><span>Google Ads Search</span><span>Display</span><span>Performance Max</span><span>Demand Gen</span><span>App Promotion</span><span>GA4</span><span>Google Tag Manager</span><span>Meta Pixel</span><span>Conversions API</span><span>UTM Tracking</span><span>Remarketing</span><span>Creative Testing</span><span>Landing-Page Optimisation</span>
+  </div>
 </div>
 </section>
 
 <section id="process">
 <div class="container">
-<div class="sectionhead"><span class="eyebrow">How I Work</span><h2>A structured path to <span class="green">better performance.</span></h2></div>
-<div class="process">
-<div class="step"><b>STEP 01</b><h3>Understand</h3><p>Review business goals, offer, audience and existing results.</p></div>
-<div class="step"><b>STEP 02</b><h3>Build</h3><p>Set up campaigns, creative assets and accurate conversion tracking.</p></div>
-<div class="step"><b>STEP 03</b><h3>Optimise</h3><p>Analyse results and test opportunities to improve efficiency.</p></div>
-<div class="step"><b>STEP 04</b><h3>Report</h3><p>Share meaningful metrics, insights and next steps.</p></div>
-</div>
+  <div class="sectionhead"><span class="eyebrow">My Process</span><h2>A clear process for <span class="green">better performance.</span></h2></div>
+  <div class="process">
+    <div class="step"><b>STEP 01</b><h3>Understand</h3><p>Review business goals, audiences, offers and existing campaign data.</p></div>
+    <div class="step"><b>STEP 02</b><h3>Build</h3><p>Structure campaigns, creatives, audiences and conversion tracking.</p></div>
+    <div class="step"><b>STEP 03</b><h3>Optimise</h3><p>Analyse performance and test ways to improve campaign efficiency.</p></div>
+    <div class="step"><b>STEP 04</b><h3>Report</h3><p>Share metrics, insights and actionable recommendations.</p></div>
+  </div>
 </div>
 </section>
 
 <section id="contact">
 <div class="container">
-<div class="contact">
-<div><span class="eyebrow">Contact</span><h2>Let's discuss your <span class="green">next campaign.</span></h2><p>Available for remote performance marketing opportunities and freelance projects.</p><p>Email: meenashivam425@gmail.com<br>Location: Guna, Madhya Pradesh, India</p></div>
-<div class="contact-actions">
-<a class="btn" href="mailto:meenashivam425@gmail.com?subject=Performance%20Marketing%20Enquiry">Email Me ↗</a>
-<a class="btn btn-outline" href="https://wa.me/918839853151" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
-</div>
-</div>
+  <div class="contact">
+    <div>
+      <span class="eyebrow">Let's Connect</span>
+      <h2>Let's grow your <span class="green">next campaign.</span></h2>
+      <p>Available for remote performance marketing roles and freelance projects.</p>
+      <p>Email: meenashivam425@gmail.com<br>Location: Guna, Madhya Pradesh, India</p>
+    </div>
+    <div class="contact-actions">
+      <a class="btn" href="mailto:meenashivam425@gmail.com?subject=Performance%20Marketing%20Enquiry">Email Me ↗</a>
+      <a class="btn btn-outline" href="https://wa.me/918839853151" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+    </div>
+  </div>
 </div>
 </section>
 </main>
 
-<footer><div class="container"><span>© <span id="year"></span> Shivam Meena</span><span>Performance Marketing · Meta Ads · Google Ads</span></div></footer>
-<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+<footer>
+<div class="container">
+  <span>© <span id="year"></span> Shivam Meena</span>
+  <span>Performance Marketing · Meta Ads · Google Ads</span>
+</div>
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
