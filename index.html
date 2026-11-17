@@ -4,193 +4,272 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shivam Meena - Performance Marketing Specialist with 2 years of experience in Meta Ads, Google Ads, PPC and paid media.">
-<title>Shivam Meena | Performance Marketing Specialist</title>
+<meta name="description" content="Shivam Meena is a Performance Marketing Specialist with 2 years of experience in Meta Ads, Google Ads, PPC and paid media campaigns.">
+<title>Shivam Meena | Performance Marketing & Paid Ads</title>
 
 <style>
 :root {
-  --bg: #090d10;
-  --panel: #12191e;
-  --text: #f4f7f8;
-  --muted: #aab7bd;
-  --green: #a7ff55;
-  --border: #28343a;
+  --bg:#080b0d;
+  --surface:#10171b;
+  --surface2:#151e22;
+  --green:#b5ff65;
+  --white:#f7faf8;
+  --muted:#a4b0b5;
+  --border:#263238;
 }
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.7;
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--white);
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.7;
 }
-a { color: inherit; text-decoration: none; }
-.container { width: min(1120px, 90%); margin: auto; }
-
-header {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: rgba(9,13,16,.96);
-  border-bottom: 1px solid var(--border);
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,90%);margin:auto}
+.green{color:var(--green)}
+section{padding:90px 0}
+.section-label{
+  color:var(--green);
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:13px;
 }
-nav {
-  min-height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+.section-heading{
+  font-size:clamp(32px,5vw,52px);
+  line-height:1.15;
+  letter-spacing:-1.5px;
+  margin-bottom:16px;
 }
-.logo { font-size: 23px; font-weight: 800; white-space: nowrap; }
-.logo span, .green { color: var(--green); }
-.navlinks { display: flex; gap: 20px; flex-wrap: wrap; }
-.navlinks a { color: var(--muted); font-size: 14px; }
-.navlinks a:hover { color: var(--green); }
-
-.hero { padding: 100px 0 85px; }
-.tag, .pill {
-  display: inline-block;
-  color: var(--green);
-  border: 1px solid #40572d;
-  background: #172014;
-  border-radius: 30px;
-  padding: 5px 13px;
-  font-size: 12px;
+.section-heading span{color:var(--green)}
+.section-desc{color:var(--muted);max-width:680px;margin-bottom:38px}
+header{
+  position:sticky;top:0;z-index:100;
+  background:rgba(8,11,13,.94);
+  backdrop-filter:blur(15px);
+  border-bottom:1px solid var(--border);
 }
-.hero h1 {
-  font-size: clamp(42px, 7vw, 76px);
-  line-height: 1.08;
-  margin: 22px 0;
+nav{
+  min-height:76px;
+  display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
 }
-.hero h1 span { color: var(--green); }
-.hero p {
-  color: var(--muted);
-  max-width: 720px;
-  font-size: 18px;
+.logo{font-size:23px;font-weight:900;letter-spacing:-1px}
+.logo span{color:var(--green)}
+.navlinks{display:flex;gap:23px;align-items:center;flex-wrap:wrap}
+.navlinks a{font-size:13px;color:var(--muted);transition:.2s}
+.navlinks a:hover{color:var(--green)}
+.nav-cta{
+  padding:10px 17px;border:1px solid var(--green);
+  color:var(--green)!important;border-radius:7px;
 }
-.actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-.btn {
-  display: inline-block;
-  padding: 12px 21px;
-  border-radius: 8px;
-  font-weight: bold;
-  border: 1px solid var(--green);
+.hero{
+  min-height:680px;
+  display:flex;align-items:center;
+  padding:100px 0 80px;
+  background:
+    radial-gradient(ellipse at 80% 35%,rgba(181,255,101,.09),transparent 42%),
+    radial-gradient(ellipse at 5% 85%,rgba(181,255,101,.04),transparent 40%);
 }
-.btn.primary { background: var(--green); color: #10150c; }
-.btn.secondary { color: var(--green); }
-
-section { padding: 72px 0; }
-.section-title {
-  font-size: clamp(30px, 5vw, 47px);
-  margin-bottom: 10px;
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.25fr .75fr;
+  gap:55px;align-items:center;
 }
-.section-title span { color: var(--green); }
-.section-intro { color: var(--muted); margin-bottom: 32px; }
-
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
-  margin-top: 35px;
+.availability{
+  display:inline-flex;align-items:center;gap:9px;
+  border:1px solid #34472a;background:#111a10;
+  border-radius:40px;padding:7px 14px;
+  color:var(--green);font-size:12px;
+  margin-bottom:25px;
 }
-.stat {
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 20px;
-  background: var(--panel);
+.dot{
+  width:8px;height:8px;background:var(--green);
+  border-radius:50%;box-shadow:0 0 12px var(--green);
 }
-.stat strong {
-  display: block;
-  font-size: 28px;
-  color: var(--green);
+.hero h1{
+  font-size:clamp(43px,6.2vw,75px);
+  line-height:1.06;letter-spacing:-3px;
+  margin-bottom:24px;
 }
-.stat small { color: var(--muted); }
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 22px;
+.hero h1 span{color:var(--green)}
+.hero-text{color:var(--muted);font-size:17px;max-width:640px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:13px 22px;border-radius:8px;
+  font-weight:800;font-size:14px;transition:.25s;
 }
-.card {
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 27px;
+.btn-primary{background:var(--green);color:#10160c}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 30px #b5ff6533}
+.btn-outline{border:1px solid #536168;color:var(--white)}
+.btn-outline:hover{border-color:var(--green);color:var(--green)}
+.hero-note{font-size:12px;color:var(--muted);margin-top:23px}
+.hero-card{
+  background:linear-gradient(145deg,#17221c,#10171b);
+  border:1px solid #34452d;border-radius:22px;
+  padding:30px;box-shadow:0 20px 70px #0008;
+  position:relative;overflow:hidden;
 }
-.card h3 { font-size: 21px; margin: 12px 0; }
-.card p, .card li { color: var(--muted); }
-.card ul { padding-left: 20px; margin-top: 12px; }
-.card li { margin-bottom: 5px; }
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0,1fr));
-  gap: 24px;
+.hero-card:after{
+  content:"";position:absolute;width:190px;height:190px;
+  background:#b5ff6512;filter:blur(50px);
+  top:-70px;right:-70px;
 }
-.proof-card {
-  overflow: hidden;
-  background: var(--panel);
-  border: 1px solid var(--border);
-  border-radius: 16px;
+.hero-card .mini-label{
+  font-size:11px;letter-spacing:2px;color:var(--green);
+  font-weight:bold;
 }
-.proof-card img {
-  display: block;
-  width: 100%;
-  height: 310px;
-  object-fit: contain;
-  background: #080b0e;
-  cursor: zoom-in;
+.hero-card h2{font-size:27px;line-height:1.2;margin:15px 0}
+.hero-card p{font-size:13px;color:var(--muted)}
+.hero-number{
+  font-size:62px;line-height:1.1;
+  font-weight:900;color:var(--green);margin-top:27px;
 }
-.proof-content { padding: 22px; }
-.proof-content h3 { margin: 12px 0 8px; }
-.proof-content p { color: var(--muted); }
-
-.contact-box {
-  border: 1px solid var(--border);
-  background: var(--panel);
-  padding: 35px;
-  border-radius: 18px;
+.hero-number-caption{font-size:13px;color:var(--muted)}
+.hero-divider{height:1px;background:var(--border);margin:23px 0}
+.hero-check{font-size:13px;color:#dbe5df;margin:9px 0}
+.hero-check span{color:var(--green);margin-right:8px}
+.metrics{
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  background:#0d1215;padding:28px 0;
 }
-.contact-box p { color: var(--muted); margin: 10px 0; }
-
-footer {
-  border-top: 1px solid var(--border);
-  padding: 25px 0;
-  color: var(--muted);
-  text-align: center;
+.metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.metric{text-align:center;border-right:1px solid var(--border)}
+.metric:last-child{border:0}
+.metric strong{display:block;font-size:29px;color:var(--green)}
+.metric span{font-size:12px;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:15px;padding:29px;transition:.25s;
 }
-
-.lightbox {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 50;
-  background: rgba(0,0,0,.95);
-  align-items: center;
-  justify-content: center;
-  padding: 25px;
+.card:hover{transform:translateY(-5px);border-color:#718b5c}
+.card-icon{
+  width:44px;height:44px;display:flex;
+  align-items:center;justify-content:center;
+  background:#1d2b18;border:1px solid #40572d;
+  color:var(--green);border-radius:11px;
+  font-size:21px;margin-bottom:20px;
 }
-.lightbox img {
-  max-width: 95%;
-  max-height: 90vh;
-  object-fit: contain;
+.card h3{font-size:21px;margin-bottom:13px}
+.card p{font-size:14px;color:var(--muted)}
+.card ul{padding-left:18px;margin-top:15px}
+.card li{color:#c1cbce;font-size:13px;margin:6px 0}
+.card li::marker{color:var(--green)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tags span{
+  font-size:11px;padding:5px 10px;
+  border-radius:20px;background:#1a2529;
+  border:1px solid var(--border);color:#c4d0d2;
 }
-.lightbox:target { display: flex; }
-.close {
-  position: absolute;
-  top: 15px;
-  right: 30px;
-  font-size: 38px;
-  color: white;
+.experience-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.exp-card{
+  background:var(--surface);border:1px solid var(--border);
+  padding:27px;border-radius:14px;
 }
-
-@media(max-width:700px) {
-  nav { align-items: flex-start; flex-direction: column; padding: 15px 0; }
-  .navlinks { gap: 12px; }
-  .navlinks a { font-size: 12px; }
-  .grid, .proof-grid, .stats { grid-template-columns: 1fr; }
-  .hero { padding: 70px 0; }
-  .proof-card img { height: 240px; }
+.exp-card h3{margin:12px 0 8px;font-size:20px}
+.exp-card p{font-size:14px;color:var(--muted)}
+.market{
+  color:var(--green);font-size:11px;
+  letter-spacing:2px;font-weight:800;
+}
+.result-feature{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:25px;margin-top:30px;
+}
+.result-box{
+  background:linear-gradient(135deg,#182319,#10171b);
+  border:1px solid #40572d;padding:30px;border-radius:16px;
+}
+.result-box .big{
+  font-size:clamp(38px,5vw,58px);
+  font-weight:900;color:var(--green);line-height:1.1;
+}
+.result-box h3{margin:12px 0 5px;font-size:19px}
+.result-box p{color:var(--muted);font-size:13px}
+.proof-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:23px}
+.proof-card{
+  background:var(--surface);border:1px solid var(--border);
+  border-radius:15px;overflow:hidden;transition:.25s;
+}
+.proof-card:hover{transform:translateY(-4px);border-color:#718b5c}
+.proof-card a.image-link{display:block;background:#080b0d}
+.proof-card img{
+  width:100%;height:300px;object-fit:contain;
+  display:block;cursor:zoom-in;
+}
+.proof-info{padding:22px}
+.proof-info h3{font-size:19px;margin:10px 0 7px}
+.proof-info p{font-size:13px;color:var(--muted)}
+.proof-type{
+  font-size:10px;letter-spacing:1.8px;
+  color:var(--green);font-weight:800;
+}
+.proof-missing{
+  min-height:220px;display:flex;align-items:center;
+  justify-content:center;text-align:center;
+  color:var(--muted);font-size:13px;padding:25px;
+}
+.skills-grid{display:flex;flex-wrap:wrap;gap:12px}
+.skill{
+  padding:11px 17px;background:var(--surface);
+  border:1px solid var(--border);border-radius:8px;
+  font-size:13px;color:#dce5e2;
+}
+.skill:hover{border-color:var(--green);color:var(--green)}
+.contact-section{
+  background:radial-gradient(ellipse at 50% 100%,#b5ff6514,transparent 65%);
+}
+.contact-box{
+  border:1px solid #3c512e;
+  background:linear-gradient(135deg,#141d16,#10171b);
+  padding:55px 35px;border-radius:20px;text-align:center;
+}
+.contact-box h2{
+  font-size:clamp(34px,5vw,54px);
+  line-height:1.15;margin-bottom:16px;
+}
+.contact-box h2 span{color:var(--green)}
+.contact-box p{color:var(--muted);max-width:650px;margin:0 auto}
+.contact-actions{display:flex;justify-content:center;gap:13px;flex-wrap:wrap;margin-top:28px}
+.contact-email{margin-top:25px!important;font-size:14px}
+.contact-email a{color:var(--green)}
+footer{
+  border-top:1px solid var(--border);
+  padding:25px 0;text-align:center;
+  color:var(--muted);font-size:12px;
+}
+.lightbox{
+  display:none;position:fixed;inset:0;z-index:999;
+  background:#000f;align-items:center;justify-content:center;padding:25px;
+}
+.lightbox:target{display:flex}
+.lightbox img{max-width:95%;max-height:88vh;object-fit:contain}
+.lightbox .close{
+  position:absolute;top:15px;right:28px;
+  color:white;font-size:40px;
+}
+@media(max-width:850px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero-card{max-width:500px}
+  .metric-grid{grid-template-columns:repeat(2,1fr);row-gap:22px}
+  .metric:nth-child(2){border:0}
+}
+@media(max-width:650px){
+  section{padding:65px 0}
+  nav{align-items:flex-start;flex-direction:column;padding:15px 0}
+  .navlinks{gap:12px}
+  .navlinks a{font-size:12px}
+  .cards,.experience-grid,.proof-grid,.result-feature{grid-template-columns:1fr}
+  .hero{padding:65px 0}
+  .hero h1{letter-spacing:-2px}
+  .metric strong{font-size:24px}
+  .proof-card img{height:240px}
+  .contact-box{padding:40px 20px}
 }
 </style>
 </head>
@@ -200,13 +279,13 @@ footer {
 <header>
   <div class="container">
     <nav>
-      <a class="logo" href="#home">Shivam <span>Meena</span></a>
+      <a class="logo" href="#home">SHIVAM<span> MEENA</span></a>
       <div class="navlinks">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#experience">Experience</a>
-        <a href="#proof">Proof</a>
-        <a href="#contact">Contact</a>
+        <a href="#proof">Results</a>
+        <a href="#contact" class="nav-cta">Hire Me ↗</a>
       </div>
     </nav>
   </div>
@@ -214,308 +293,374 @@ footer {
 
 <main>
 
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="container">
-    <div class="tag">PERFORMANCE MARKETING SPECIALIST</div>
+  <div class="container hero-grid">
+    <div>
+      <div class="availability">
+        <span class="dot"></span>
+        AVAILABLE FOR REMOTE OPPORTUNITIES
+      </div>
 
-    <h1>
-      Growing Businesses<br>
-      Through <span>Paid Advertising</span>
-    </h1>
+      <p class="section-label">PERFORMANCE MARKETING SPECIALIST</p>
 
-    <p>
-      I'm Shivam Meena, a Performance Marketing Specialist with
-      2 years of hands-on experience managing and optimising Meta Ads
-      and Google Ads campaigns. I help businesses generate leads,
-      sales, app installs and measurable growth through data-driven
-      advertising strategies.
-    </p>
+      <h1>
+        I Turn Ad Spend Into
+        <span>Measurable Growth.</span>
+      </h1>
 
-    <div class="actions">
-      <a class="btn primary" href="#proof">View Campaign Proof</a>
-      <a class="btn secondary" href="#contact">Let's Connect</a>
+      <p class="hero-text">
+        I'm Shivam Meena, a Performance Marketing Specialist with
+        2 years of hands-on experience managing Meta Ads and Google Ads.
+        I build data-driven campaigns that help businesses generate
+        quality leads, increase sales and grow profitably.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Let's Work Together ↗</a>
+        <a href="#proof" class="btn btn-outline">Explore My Results ↓</a>
+      </div>
+
+      <p class="hero-note">
+        Meta Ads · Google Ads · PPC · Lead Generation · eCommerce
+      </p>
     </div>
 
-    <div class="stats">
-      <div class="stat">
-        <strong>2 Years</strong>
-        <small>Performance Marketing Experience</small>
-      </div>
-      <div class="stat">
-        <strong>₹1 Cr+</strong>
-        <small>Monthly advertising budget managed</small>
-      </div>
-      <div class="stat">
-        <strong>6+ ROAS</strong>
-        <small>Reported eCommerce campaign result</small>
-      </div>
+    <div class="hero-card">
+      <div class="mini-label">MY PERFORMANCE MARKETING PROFILE</div>
+      <h2>Strategy.<br>Execution.<br><span class="green">Performance.</span></h2>
+      <p>Turning campaign data into smarter advertising decisions.</p>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-number">2 Years</div>
+      <div class="hero-number-caption">Hands-on Performance Marketing Experience</div>
+
+      <div class="hero-divider"></div>
+
+      <div class="hero-check"><span>✓</span> Meta & Google Ads Campaign Management</div>
+      <div class="hero-check"><span>✓</span> Conversion Tracking & Analytics</div>
+      <div class="hero-check"><span>✓</span> International Campaign Experience</div>
+      <div class="hero-check"><span>✓</span> Data-Driven Optimisation</div>
     </div>
   </div>
 </section>
 
+<!-- RESULTS STRIP -->
+<div class="metrics">
+  <div class="container metric-grid">
+    <div class="metric">
+      <strong>2 Years</strong>
+      <span>Experience</span>
+    </div>
+    <div class="metric">
+      <strong>₹1 Cr+</strong>
+      <span>Monthly Budget Managed</span>
+    </div>
+    <div class="metric">
+      <strong>5,000+</strong>
+      <span>Monthly Leads in Campaigns</span>
+    </div>
+    <div class="metric">
+      <strong>6+ ROAS</strong>
+      <span>Reported Campaign Result</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
 <section id="about">
   <div class="container">
-    <h2 class="section-title">About <span>Me</span></h2>
-    <p class="section-intro">
-      Performance-focused advertising, campaign strategy and optimisation.
+    <p class="section-label">GET TO KNOW ME</p>
+    <h2 class="section-heading">More Than Just <span>Running Ads.</span></h2>
+    <p class="section-desc">
+      I focus on the complete advertising process — from strategy
+      and campaign setup to tracking, analysis and continuous improvement.
     </p>
 
     <div class="card">
+      <h3>Performance Marketing Specialist | Paid Media</h3>
       <p>
-        I am a Performance Marketing Specialist with 2 years of hands-on
-        experience in planning, launching, managing and optimising paid
-        advertising campaigns across Meta and Google platforms.
+        With 2 years of hands-on experience, I work across the full
+        performance marketing cycle. I plan campaigns, research audiences,
+        test creatives, manage budgets, implement tracking and analyse
+        results to identify opportunities for growth.
       </p>
       <p style="margin-top:15px">
-        My expertise includes campaign strategy, audience research,
-        creative testing, budget management, conversion tracking,
-        performance analysis and continuous optimisation.
+        My experience includes eCommerce, healthcare, financial services,
+        home improvement, app promotion, B2B and lead generation.
+        I've worked with campaigns targeting India, Australia, USA and Canada.
       </p>
-      <p style="margin-top:15px">
-        I have worked across eCommerce, lead generation, healthcare,
-        financial services, home improvement, app promotion and B2B
-        industries, with campaign experience in India, Australia,
-        USA and Canada.
-      </p>
+      <div class="tags">
+        <span>India</span><span>Australia</span><span>USA</span><span>Canada</span>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- SERVICES -->
 <section id="services">
   <div class="container">
-    <h2 class="section-title">Advertising <span>Expertise</span></h2>
-    <p class="section-intro">
-      Platforms, campaign objectives and optimisation capabilities.
+    <p class="section-label">WHAT I DO</p>
+    <h2 class="section-heading">Advertising That Drives <span>Action.</span></h2>
+    <p class="section-desc">
+      Campaign strategy, execution and optimisation across leading
+      digital advertising platforms.
     </p>
 
-    <div class="grid">
-
+    <div class="cards">
       <div class="card">
-        <span class="pill">META ADS</span>
-        <h3>Facebook & Instagram Advertising</h3>
+        <div class="card-icon">M</div>
+        <h3>Meta Ads Management</h3>
+        <p>Facebook and Instagram campaigns built around your business goals.</p>
         <ul>
           <li>Sales and eCommerce campaigns</li>
           <li>Lead Generation campaigns</li>
-          <li>Traffic campaigns</li>
-          <li>Engagement campaigns</li>
+          <li>Traffic and Engagement campaigns</li>
           <li>Awareness and Reach campaigns</li>
           <li>App Promotion campaigns</li>
           <li>Retargeting and remarketing</li>
           <li>Advantage+ campaign strategies</li>
-          <li>Audience research and targeting</li>
-          <li>Custom and Lookalike Audiences</li>
-          <li>Interest-based and demographic targeting</li>
-          <li>Creative testing and optimisation</li>
-          <li>Campaign budget management</li>
+          <li>Custom, Lookalike and interest-based audiences</li>
+          <li>Creative testing and budget optimisation</li>
         </ul>
+        <div class="tags"><span>Facebook</span><span>Instagram</span><span>Meta Pixel</span></div>
       </div>
 
       <div class="card">
-        <span class="pill">GOOGLE ADS</span>
-        <h3>Google Advertising</h3>
+        <div class="card-icon">G</div>
+        <h3>Google Ads Management</h3>
+        <p>Reach potential customers when they're searching, browsing or discovering.</p>
         <ul>
-          <li>Search campaigns</li>
+          <li>Google Search campaigns</li>
           <li>Display campaigns</li>
           <li>Performance Max campaigns</li>
           <li>Demand Gen campaigns</li>
           <li>App Promotion campaigns</li>
           <li>Shopping campaigns</li>
-          <li>Keyword research</li>
-          <li>Negative keyword management</li>
-          <li>Remarketing strategies</li>
-          <li>Conversion tracking and optimisation</li>
+          <li>Keyword and negative keyword research</li>
+          <li>Remarketing and conversion optimisation</li>
         </ul>
+        <div class="tags"><span>Google Ads</span><span>Search</span><span>PMax</span></div>
       </div>
 
       <div class="card">
-        <span class="pill">TRACKING & ANALYTICS</span>
-        <h3>Measurement & Reporting</h3>
+        <div class="card-icon">↗</div>
+        <h3>Tracking & Analytics</h3>
+        <p>Understand what's working with reliable measurement and reporting.</p>
         <ul>
-          <li>Google Analytics 4 (GA4)</li>
-          <li>Google Tag Manager (GTM)</li>
+          <li>Google Analytics 4</li>
+          <li>Google Tag Manager</li>
           <li>Meta Pixel implementation</li>
           <li>Conversions API (CAPI)</li>
-          <li>UTM tracking</li>
-          <li>Conversion event testing</li>
-          <li>Campaign performance reporting</li>
+          <li>UTM tracking and event testing</li>
+          <li>Conversion tracking and reporting</li>
         </ul>
+        <div class="tags"><span>GA4</span><span>GTM</span><span>CAPI</span></div>
       </div>
 
       <div class="card">
-        <span class="pill">OPTIMISATION</span>
-        <h3>Performance Growth</h3>
+        <div class="card-icon">✦</div>
+        <h3>Growth & Optimisation</h3>
+        <p>Improve campaign efficiency through continuous performance analysis.</p>
         <ul>
           <li>Campaign structure and strategy</li>
-          <li>Budget allocation</li>
+          <li>Budget allocation and scaling</li>
           <li>Landing page analysis</li>
           <li>Creative and copy testing</li>
-          <li>Cost per lead analysis</li>
-          <li>Cost per acquisition analysis</li>
+          <li>CPL and CPA analysis</li>
           <li>ROAS and conversion optimisation</li>
         </ul>
+        <div class="tags"><span>ROAS</span><span>CPA</span><span>CRO</span></div>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- INDUSTRY EXPERIENCE -->
 <section id="experience">
   <div class="container">
-    <h2 class="section-title">Campaign <span>Experience</span></h2>
-    <p class="section-intro">
-      Two years of performance marketing experience across markets,
-      business models and industries.
+    <p class="section-label">MARKETS & INDUSTRIES</p>
+    <h2 class="section-heading">Experience Across <span>Markets.</span></h2>
+    <p class="section-desc">
+      Campaign experience across different business models,
+      industries and international markets.
     </p>
 
-    <div class="grid">
-
-      <div class="card">
-        <span class="pill">USA</span>
-        <h3>US Market Campaign Experience</h3>
+    <div class="experience-grid">
+      <div class="exp-card">
+        <div class="market">UNITED STATES</div>
+        <h3>USA Campaign Experience</h3>
         <p>
-          Worked on paid advertising campaigns targeting audiences
-          in the United States, including service-based and other
-          business campaigns.
-        </p>
-        <ul>
-          <li>Campaign setup and management</li>
-          <li>Audience and location targeting</li>
-          <li>Conversion-focused optimisation</li>
-          <li>Initiate Checkout event performance monitoring</li>
-          <li>Tracking and campaign analysis</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">AUSTRALIA</span>
-        <h3>Home Improvement Lead Generation</h3>
-        <p>
-          Managed advertising campaigns for home improvement services,
-          focusing on local audiences, lead generation and enquiry acquisition.
-        </p>
-        <ul>
-          <li>Local audience targeting</li>
-          <li>Lead form campaigns</li>
-          <li>Creative and offer testing</li>
-          <li>Campaign monitoring and optimisation</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <span class="pill">INDIA</span>
-        <h3>eCommerce & Sales Campaigns</h3>
-        <p>
-          Managed eCommerce advertising campaigns with a focus on purchases,
-          return on ad spend, creative testing and budget optimisation.
+          Healthcare and service-focused advertising campaigns,
+          audience targeting, conversion event monitoring,
+          tracking and performance optimisation.
         </p>
       </div>
 
-      <div class="card">
-        <span class="pill">USA & CANADA</span>
-        <h3>B2B & Lead Generation</h3>
+      <div class="exp-card">
+        <div class="market">AUSTRALIA</div>
+        <h3>Home Improvement & Lead Generation</h3>
         <p>
-          Worked on advertising campaigns for business-focused services,
-          including cabinetry and kitchen design, with audience targeting
-          and landing page traffic strategies.
+          Local lead generation for home improvement services,
+          including creative testing, local audience targeting,
+          lead forms and campaign optimisation.
         </p>
       </div>
 
+      <div class="exp-card">
+        <div class="market">INDIA</div>
+        <h3>eCommerce & Financial Services</h3>
+        <p>
+          Purchase-focused jewellery campaigns and financial services
+          lead generation, with budget management and performance analysis.
+        </p>
+      </div>
+
+      <div class="exp-card">
+        <div class="market">USA & CANADA</div>
+        <h3>B2B & Business Campaigns</h3>
+        <p>
+          Campaign experience for cabinetry and kitchen design businesses,
+          including audience targeting, traffic strategies and lead generation.
+        </p>
+      </div>
+    </div>
+
+    <div class="result-feature">
+      <div class="result-box">
+        <div class="big">Under $4</div>
+        <h3>Cost per Initiate Checkout</h3>
+        <p>Reported result from a USA-targeted campaign.</p>
+      </div>
+      <div class="result-box">
+        <div class="big">6.39x</div>
+        <h3>Reported Purchase ROAS</h3>
+        <p>Jewellery eCommerce campaign result from the reported campaign period.</p>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- SKILLS -->
+<section>
+  <div class="container">
+    <p class="section-label">MY TOOLKIT</p>
+    <h2 class="section-heading">Platforms & <span>Skills.</span></h2>
+    <p class="section-desc">Tools and capabilities used in performance marketing.</p>
+    <div class="skills-grid">
+      <span class="skill">Meta Ads Manager</span>
+      <span class="skill">Google Ads</span>
+      <span class="skill">GA4</span>
+      <span class="skill">Google Tag Manager</span>
+      <span class="skill">Meta Pixel</span>
+      <span class="skill">Conversions API</span>
+      <span class="skill">UTM Tracking</span>
+      <span class="skill">Search Ads</span>
+      <span class="skill">Display Ads</span>
+      <span class="skill">Performance Max</span>
+      <span class="skill">Demand Gen</span>
+      <span class="skill">App Promotion</span>
+      <span class="skill">Lead Generation</span>
+      <span class="skill">eCommerce Ads</span>
+      <span class="skill">Retargeting</span>
+      <span class="skill">Audience Research</span>
+      <span class="skill">Conversion Optimisation</span>
+      <span class="skill">Campaign Reporting</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROOF -->
 <section id="proof">
   <div class="container">
-    <h2 class="section-title">Real Campaign <span>Proof</span></h2>
-    <p class="section-intro">
-      Selected advertising performance screenshots.
-      Click an image to view it larger.
+    <p class="section-label">CAMPAIGN PERFORMANCE</p>
+    <h2 class="section-heading">Results Backed By <span>Real Campaign Proof.</span></h2>
+    <p class="section-desc">
+      A selection of advertising campaign screenshots and performance evidence.
+      Client-identifying information should be removed before publishing.
     </p>
 
     <div class="proof-grid">
 
       <div class="proof-card">
-        <a href="#proof1">
+        <a class="image-link" href="#image1">
           <img src="usa-under-4-checkout.png"
-               alt="Redacted USA campaign screenshot showing under four dollars cost per Initiate Checkout">
+               alt="USA Meta Ads campaign proof showing under four dollar Initiate Checkout cost"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">USA · META ADS</span>
-          <h3>Under $4 Cost per Initiate Checkout</h3>
-          <p>
-            USA-targeted campaign experience with a reported cost
-            below $4 per Initiate Checkout event.
-          </p>
+        <div class="proof-missing" style="display:none">
+          Upload usa-under-4-checkout.png to your repository root.
+        </div>
+        <div class="proof-info">
+          <div class="proof-type">USA · META ADS</div>
+          <h3>Under $4 per Initiate Checkout</h3>
+          <p>Reported USA campaign cost per Initiate Checkout event.</p>
         </div>
       </div>
 
       <div class="proof-card">
-        <a href="#proof2">
-          <img src="6%2B%20roas.png"
-               alt="Redacted eCommerce advertising performance report">
+        <a class="image-link" href="#image2">
+          <img src="6%2B%20roas.png" alt="eCommerce Meta Ads campaign proof"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">ECOMMERCE · META ADS</span>
-          <h3>Purchase & ROAS Results</h3>
-          <p>
-            eCommerce campaign performance proof, focused on purchase
-            conversions and return on advertising spend.
-          </p>
+        <div class="proof-missing" style="display:none">Check the filename 6+ roas.png</div>
+        <div class="proof-info">
+          <div class="proof-type">ECOMMERCE · META ADS</div>
+          <h3>Purchase & ROAS Performance</h3>
+          <p>eCommerce campaign performance and purchase conversion evidence.</p>
         </div>
       </div>
 
       <div class="proof-card">
-        <a href="#proof3">
-          <img src="Leads.png"
-               alt="Redacted lead generation campaign performance report">
+        <a class="image-link" href="#image3">
+          <img src="Leads.png" alt="Lead generation campaign screenshot"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">LEAD GENERATION</span>
+        <div class="proof-missing" style="display:none">Check the filename Leads.png</div>
+        <div class="proof-info">
+          <div class="proof-type">LEAD GENERATION</div>
           <h3>Lead Campaign Results</h3>
-          <p>
-            Advertising performance and lead generation campaign data.
-          </p>
+          <p>Lead generation campaign performance and advertising data.</p>
         </div>
       </div>
 
       <div class="proof-card">
-        <a href="#proof4">
-          <img src="app.png" alt="Redacted app promotion campaign proof">
+        <a class="image-link" href="#image4">
+          <img src="app.png" alt="App promotion campaign proof"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">APP PROMOTION</span>
+        <div class="proof-missing" style="display:none">Check the filename app.png</div>
+        <div class="proof-info">
+          <div class="proof-type">APP PROMOTION</div>
           <h3>App Campaign Performance</h3>
-          <p>
-            Campaign management and advertising performance for app promotion.
-          </p>
+          <p>App advertising campaign management and performance evidence.</p>
         </div>
       </div>
 
       <div class="proof-card">
-        <a href="#proof5">
-          <img src="app%201.png"
-               alt="Redacted additional app advertising campaign proof">
+        <a class="image-link" href="#image5">
+          <img src="app%201.png" alt="Additional app advertising campaign proof"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">PAID ADVERTISING</span>
+        <div class="proof-missing" style="display:none">Check the filename app 1.png</div>
+        <div class="proof-info">
+          <div class="proof-type">PAID ADVERTISING</div>
           <h3>Additional Campaign Proof</h3>
-          <p>
-            Additional campaign reporting and advertising experience.
-          </p>
+          <p>Additional advertising campaign reporting and experience.</p>
         </div>
       </div>
 
       <div class="proof-card">
-        <a href="#proof6">
-          <img src="meta%20app.png"
-               alt="Redacted Meta advertising campaign proof">
+        <a class="image-link" href="#image6">
+          <img src="meta%20app.png" alt="Meta advertising campaign proof"
+               onerror="this.style.display='none';this.parentElement.nextElementSibling.style.display='flex'">
         </a>
-        <div class="proof-content">
-          <span class="pill">META ADS</span>
+        <div class="proof-missing" style="display:none">Check the filename meta app.png</div>
+        <div class="proof-info">
+          <div class="proof-type">META ADS</div>
           <h3>Meta Campaign Performance</h3>
-          <p>
-            Campaign management, optimisation and reporting proof.
-          </p>
+          <p>Campaign management, optimisation and reporting evidence.</p>
         </div>
       </div>
 
@@ -523,25 +668,35 @@ footer {
   </div>
 </section>
 
-<section id="contact">
+<!-- CONTACT CTA -->
+<section class="contact-section" id="contact">
   <div class="container">
     <div class="contact-box">
-      <h2 class="section-title">Let's <span>Work Together</span></h2>
+      <p class="section-label">LET'S BUILD SOMETHING THAT GROWS</p>
+      <h2>Ready To Grow Your Business With <span>Paid Ads?</span></h2>
       <p>
-        Looking for a performance marketer to manage and optimise
-        your paid advertising campaigns? Let's connect.
+        Looking for someone to manage your Meta Ads or Google Ads?
+        Let's discuss your goals, your audience and how performance
+        marketing can help your business grow.
       </p>
 
-      <div class="actions">
-        <a class="btn primary" href="mailto:meenashivam425@gmail.com">
-          Email Me
+      <div class="contact-actions">
+        <a class="btn btn-primary"
+           href="mailto:meenashivam425@gmail.com?subject=Performance%20Marketing%20Opportunity">
+          Contact Me via Email ↗
+        </a>
+        <a class="btn btn-outline"
+           href="https://wa.me/918839853151" target="_blank" rel="noopener">
+          Chat on WhatsApp ↗
         </a>
       </div>
 
-      <p style="margin-top:22px">
-        Email: meenashivam425@gmail.com
+      <p class="contact-email">
+        Email: <a href="mailto:meenashivam425@gmail.com">meenashivam425@gmail.com</a>
       </p>
-      <p>Location: India · Available for remote opportunities</p>
+      <p style="margin-top:8px;font-size:12px">
+        India · Available for remote and international opportunities
+      </p>
     </div>
   </div>
 </section>
@@ -550,39 +705,17 @@ footer {
 
 <footer>
   <div class="container">
-    © 2026 Shivam Meena. Performance Marketing Portfolio.
+    © 2026 Shivam Meena · Performance Marketing Specialist
   </div>
 </footer>
 
-<div class="lightbox" id="proof1">
-  <a class="close" href="#proof">×</a>
-  <img src="usa-under-4-checkout.png" alt="USA campaign proof">
-</div>
-
-<div class="lightbox" id="proof2">
-  <a class="close" href="#proof">×</a>
-  <img src="6%2B%20roas.png" alt="eCommerce campaign proof">
-</div>
-
-<div class="lightbox" id="proof3">
-  <a class="close" href="#proof">×</a>
-  <img src="Leads.png" alt="Lead campaign proof">
-</div>
-
-<div class="lightbox" id="proof4">
-  <a class="close" href="#proof">×</a>
-  <img src="app.png" alt="App campaign proof">
-</div>
-
-<div class="lightbox" id="proof5">
-  <a class="close" href="#proof">×</a>
-  <img src="app%201.png" alt="Additional app campaign proof">
-</div>
-
-<div class="lightbox" id="proof6">
-  <a class="close" href="#proof">×</a>
-  <img src="meta%20app.png" alt="Meta campaign proof">
-</div>
+<!-- IMAGE LIGHTBOXES -->
+<div class="lightbox" id="image1"><a class="close" href="#proof">×</a><img src="usa-under-4-checkout.png" alt="USA campaign"></div>
+<div class="lightbox" id="image2"><a class="close" href="#proof">×</a><img src="6%2B%20roas.png" alt="eCommerce campaign"></div>
+<div class="lightbox" id="image3"><a class="close" href="#proof">×</a><img src="Leads.png" alt="Lead campaign"></div>
+<div class="lightbox" id="image4"><a class="close" href="#proof">×</a><img src="app.png" alt="App campaign"></div>
+<div class="lightbox" id="image5"><a class="close" href="#proof">×</a><img src="app%201.png" alt="Additional campaign"></div>
+<div class="lightbox" id="image6"><a class="close" href="#proof">×</a><img src="meta%20app.png" alt="Meta campaign"></div>
 
 </body>
 </html>
